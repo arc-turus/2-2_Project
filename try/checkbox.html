@@ -1,0 +1,106 @@
+<html >
+  <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script>
+  $(function() {
+	$("#text").hide();
+	$("#check").change(function() {  
+		  if($(this).is(":checked")) {
+			$("#text").show();
+			
+		  }
+		  else if($(this).is(":not(:checked)"))
+		  {
+			$("#text").hide();
+			
+		  }
+    
+
+	  });
+
+  });
+
+  $(function() {
+	$("#text1").hide();
+	$("#check1").change(function() {  
+		  if($(this).is(":checked")) {
+			$("#text1").show();
+			
+		  }
+		  else if($(this).is(":not(:checked)"))
+		  {
+			$("#text1").hide();
+			
+		  }
+    
+
+	  });
+
+  });
+
+  $(function() {
+	$("#text2").hide();
+	$("#check2").change(function() {  
+		  if($(this).is(":checked")) {
+			$("#text2").show();
+			
+		  }
+		  else if($(this).is(":not(:checked)"))
+		  {
+			$("#text2").hide();
+			
+		  }
+    
+
+	  });
+
+  });
+  </script>
+  <!-- <input type="checkbox" name="check" id="check">
+  <input type="text" name="text" id="text">
+
+  <input type="checkbox" name="check1" id="check1">
+  <input type="text1" name="text1" id="text1">
+
+  <input type="checkbox" name="check2" id="check2">
+  <input type="text2" name="text2" id="text2">  -->
+
+
+  <div class="container">
+	  <div>
+		  <div>
+
+  <div>
+	<h4><input type="checkbox" name="check" id="check">select date: </h4>
+
+	<input type="date" name="text" id="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+	
+  </div>
+
+  </div> 
+  <div>
+	<h4><input type="checkbox" name="check1" id="check1">select month: </h4>
+
+	<input type="month" name="text1" id="text1" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+	
+  </div>
+  <div>
+	<h4><input type="checkbox" name="check2" id="check2">select year: </h4>
+
+	<!-- <input type="year" name="text2" id="text2" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1"> -->
+	<input type="number" id="text2" min="2018" max="2099" step="1" value="2022" />
+	
+  </div>
+
+
+  </div>
+
+  
+ 
+
+</body>
+</html> 
+
+
+
